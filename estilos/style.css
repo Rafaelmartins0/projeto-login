@@ -28,8 +28,7 @@ main{
 section#login{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;   
     overflow: hidden;
     background-color: white;
     width: 251px;
@@ -38,6 +37,7 @@ section#login{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
     transition: width .1s, height .1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login div#imagem {
@@ -68,14 +68,38 @@ form div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 5px;
     margin-bottom: 5px;
-
+    border: 2px solid #5f2c82;
 }
 
 div.campo label {
     display: none;
+}
+
+.campo .material-icons {
+    color: white;
+   
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px ;
+}
+
+div.campo input{
+    background-color:#94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;  
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-9px);
+    /* tranform: sempre na ultima linha */
+}
+
+div.campo input:focus-within{ /*focus-within: é o campo de caixa selecionado */
+    background-color: white;
 }
 
 form input[type= submit] {
