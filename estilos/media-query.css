@@ -21,6 +21,9 @@
         float: right;
         width: 70%;
     }
+    div.campo input{
+        flex: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -44,4 +47,8 @@
         float: left;
         width: 50%;
     }
+}
+
+div.campo input{
+    flex: auto;
 }
